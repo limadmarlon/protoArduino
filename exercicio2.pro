@@ -1,4 +1,4 @@
-update=Sunday, February 12, 2017 'PMt' 10:31:02 PM
+update=Ter 14 Fev 2017 10:54:35 BRT
 version=1
 last_client=kicad
 [pcbnew]
@@ -56,5 +56,6 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
+LibName30=NorBotKiCadSchematicLibraries-master/NorBot
 [general]
 version=1

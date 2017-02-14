@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:NorBot
 LIBS:exercicio2-cache
 EELAYER 25 0
 EELAYER END
@@ -256,14 +257,6 @@ Wire Wire Line
 Wire Wire Line
 	8600 5450 8600 5600
 Wire Wire Line
-	7500 3350 8600 3350
-Wire Wire Line
-	8600 3350 8600 5150
-Wire Wire Line
-	7500 1650 9100 1650
-Wire Wire Line
-	9100 1650 9100 5150
-Wire Wire Line
 	3000 3750 2900 3750
 Wire Wire Line
 	2900 3850 3000 3850
@@ -407,4 +400,153 @@ Text GLabel 5050 1950 0    47   Input ~ 0
 VCC
 Text GLabel 5050 2150 0    47   Input ~ 0
 VCC
+Text GLabel 7500 3350 2    47   Input ~ 0
+PD5
+Text GLabel 8600 5150 1    47   Input ~ 0
+PD5
+Text GLabel 7500 1650 2    47   Input ~ 0
+PB0
+Text GLabel 9100 5150 1    47   Input ~ 0
+PB0
+Text GLabel 8600 5900 3    47   Input ~ 0
+VCC
+Text GLabel 9100 5900 3    47   Input ~ 0
+VCC
+$Comp
+L MIC5219 U?
+U 1 1 58A31A9F
+P 2500 5800
+F 0 "U?" H 2500 6200 60  0000 C CNN
+F 1 "MIC5219" H 2550 5400 60  0000 C CNN
+F 2 "" H 2500 5800 60  0000 C CNN
+F 3 "" H 2500 5800 60  0000 C CNN
+	1    2500 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C?
+U 1 1 58A30E2E
+P 1300 5750
+F 0 "C?" H 1325 5850 50  0000 L CNN
+F 1 "CP1" H 1325 5650 50  0000 L CNN
+F 2 "" H 1300 5750 50  0000 C CNN
+F 3 "" H 1300 5750 50  0000 C CNN
+	1    1300 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C?
+U 1 1 58A30F4B
+P 3150 5750
+F 0 "C?" H 3175 5850 50  0000 L CNN
+F 1 "CP1" H 3175 5650 50  0000 L CNN
+F 2 "" H 3150 5750 50  0000 C CNN
+F 3 "" H 3150 5750 50  0000 C CNN
+	1    3150 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58A30FC8
+P 3350 5750
+F 0 "C?" H 3375 5850 50  0000 L CNN
+F 1 "C" H 3375 5650 50  0000 L CNN
+F 2 "" H 3388 5600 50  0000 C CNN
+F 3 "" H 3350 5750 50  0000 C CNN
+	1    3350 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58A31059
+P 3550 5750
+F 0 "C?" H 3575 5850 50  0000 L CNN
+F 1 "C" H 3575 5650 50  0000 L CNN
+F 2 "" H 3588 5600 50  0000 C CNN
+F 3 "" H 3550 5750 50  0000 C CNN
+	1    3550 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 58A310F2
+P 3800 6050
+F 0 "D?" H 3800 6150 50  0000 C CNN
+F 1 "LED" H 3800 5950 50  0000 C CNN
+F 2 "" H 3800 6050 50  0000 C CNN
+F 3 "" H 3800 6050 50  0000 C CNN
+	1    3800 6050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 58A311BF
+P 3800 5750
+F 0 "R?" V 3880 5750 50  0000 C CNN
+F 1 "R" V 3800 5750 50  0000 C CNN
+F 2 "" V 3730 5750 50  0000 C CNN
+F 3 "" H 3800 5750 50  0000 C CNN
+	1    3800 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 5600 1300 5600
+Wire Wire Line
+	1300 5600 1900 5600
+Wire Wire Line
+	1900 5600 2000 5600
+Wire Wire Line
+	3000 5600 3150 5600
+Wire Wire Line
+	3150 5600 3350 5600
+Wire Wire Line
+	3350 5600 3550 5600
+Wire Wire Line
+	3550 5600 3800 5600
+Connection ~ 3150 5600
+Connection ~ 3350 5600
+$Comp
+L D D?
+U 1 1 58A31E19
+P 1150 5250
+F 0 "D?" H 1150 5350 50  0000 C CNN
+F 1 "D" H 1150 5150 50  0000 C CNN
+F 2 "" H 1150 5250 50  0000 C CNN
+F 3 "" H 1150 5250 50  0000 C CNN
+	1    1150 5250
+	-1   0    0    1   
+$EndComp
+Connection ~ 3550 5600
+Wire Wire Line
+	2000 6000 1900 6000
+Wire Wire Line
+	1900 6000 1900 5600
+Connection ~ 1900 5600
+Text GLabel 2400 1600 0    47   Input ~ 0
+RAW
+Text GLabel 1100 5600 0    47   Input ~ 0
+RAW
+Connection ~ 1300 5600
+Text GLabel 1300 5900 3    47   Input ~ 0
+GND
+Text GLabel 1750 5900 3    47   Input ~ 0
+GND
+Text GLabel 3150 5900 3    47   Input ~ 0
+GND
+Text GLabel 3350 5900 3    47   Input ~ 0
+GND
+Text GLabel 3550 5900 3    47   Input ~ 0
+GND
+Wire Wire Line
+	2000 5800 1750 5800
+Wire Wire Line
+	1750 5800 1750 5900
+Text GLabel 3800 6200 3    47   Input ~ 0
+GND
+Wire Wire Line
+	1300 5250 1300 5600
+Text GLabel 3800 5550 1    47   Input ~ 0
+VCC
+Wire Wire Line
+	3800 5600 3800 5550
 $EndSCHEMATC
