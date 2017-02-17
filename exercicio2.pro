@@ -1,4 +1,4 @@
-update=Ter 14 Fev 2017 10:54:35 BRT
+update=Thursday, February 16, 2017 'PMt' 11:54:12 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -57,5 +57,6 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=NorBotKiCadSchematicLibraries-master/NorBot
+LibName31=kicad-lib-master/components/_connectors
 [general]
 version=1
